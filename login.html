@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Don Memo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos específicos para la página de login (puedes moverlos a style.css si quieres) */
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container h1 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .login-form button:hover {
+            background-color: #e64a19;
+        }
+        .register-link {
+            margin-top: 15px;
+            display: block;
+            color: #4a00e0;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content container">
+            
+            <a href="index.html" class="logo">
+                <span class="logo-name">Don Memo</span>
+                <span class="logo-arrow">🛒</span>
+            </a>
+
+            <div class="user-nav">
+                <a href="login.html" class="active-link"><i class="fas fa-user"></i> Iniciar Sesión</a>
+                <a href="carrito.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i> 
+                    <span class="cart-count">0</span>
+                    Carrito
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav-secondary">
+            <ul class="container">
+                <li><a href="todo.html"><i class="fas fa-bars"></i> Todo</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="electronica.html">Electrónica</a></li>
+                <li><a href="hogar.html">Hogar</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="libros.html">Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container main-content">
+        
+        <div class="login-container">
+            <h1>Accede a tu Cuenta Don Memo</h1>
+            <form class="login-form">
+                <input type="text" placeholder="Correo electrónico o Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <a href="#" class="register-link">¿Olvidaste tu contraseña?</a>
+            <hr style="margin: 20px 0;">
+            <p>¿No tienes cuenta?</p>
+            <a href="#" class="cta-button" style="background-color: #2e8b57;">Crear una Cuenta Nueva</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p><a href="#">Volver arriba</a></p>
+            <p>Conoce más de Don Memo | Trabaja con Don Memo | Vende en Don Memo</p>
+            <p>&copy; 2025 La Tienda de Don Memo, C.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

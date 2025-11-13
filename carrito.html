@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito | Don Memo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos específicos para la página del Carrito */
+        .cart-grid {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .cart-items {
+            flex: 2; /* Ocupa 2/3 del espacio */
+        }
+        .cart-summary {
+            flex: 1; /* Ocupa 1/3 del espacio */
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .item-image {
+            width: 100px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .item-details {
+            flex-grow: 1;
+        }
+        .item-details h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .item-details p {
+            margin: 0;
+            color: #ff5722;
+            font-weight: bold;
+        }
+        .item-quantity {
+            margin-right: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .remove-button {
+            color: #c0392b;
+            cursor: pointer;
+            font-size: 0.9em;
+            background: none;
+            border: none;
+        }
+        .summary-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .summary-total {
+            font-size: 1.2em;
+            font-weight: bold;
+            border-top: 2px solid #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        .checkout-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .checkout-button:hover {
+            background-color: #246e46;
+        }
+        .empty-cart-message {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content container">
+            
+            <a href="index.html" class="logo">
+                <span class="logo-name">Don Memo</span>
+                <span class="logo-arrow">🛒</span>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar en La Tienda de Don Memo...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="user-nav">
+                <a href="login.html"><i class="fas fa-user"></i> Hola, Inicia Sesión</a>
+                <a href="carrito.html" class="cart-link active-link">
+                    <i class="fas fa-shopping-cart"></i> 
+                    <span class="cart-count">2</span> Carrito
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav-secondary">
+            <ul class="container">
+                <li><a href="todo.html"><i class="fas fa-bars"></i> Todo</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="electronica.html">Electrónica</a></li>
+                <li><a href="hogar.html">Hogar</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="libros.html">Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container main-content">
+        
+        <h1 style="border-bottom: 2px solid #ff5722; padding-bottom: 10px; margin-bottom: 20px;">🛍️ Mi Carrito de Compras</h1>
+
+        <div class="cart-grid">
+            
+            <div class="cart-items">
+                
+                <div class="cart-item">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e752cc3677?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Auriculares" class="item-image">
+                    <div class="item-details">
+                        <h3>Auriculares Inalámbricos Pro (Cancelación Ruido)</h3>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="item-quantity">
+                        Cantidad: 1
+                    </div>
+                    <button class="remove-button"><i class="fas fa-times"></i> Remover</button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="https://images.unsplash.com/photo-1579894451737-25e9663d919a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Taza de Café" class="item-image">
+                    <div class="item-details">
+                        <h3>Taza de Café de Don Memo (Edición Limitada)</h3>
+                        <p>$15.99</p>
+                    </div>
+                    <div class="item-quantity">
+                        Cantidad: 1
+                    </div>
+                    <button class="remove-button"><i class="fas fa-times"></i> Remover</button>
+                </div>
+
+                <div style="margin-top: 30px; padding: 15px; border: 1px dashed #ccc; text-align: center;">
+                    <a href="todo.html" style="text-decoration: none; color: #4a00e0; font-weight: bold;"><i class="fas fa-arrow-left"></i> Seguir Comprando en Don Memo</a>
+                </div>
+
+            </div> <div class="cart-summary">
+                <h2>Resumen de la Compra</h2>
+                <div class="summary-line">
+                    <span>Subtotal (2 productos):</span>
+                    <span>$65.99</span>
+                </div>
+                <div class="summary-line">
+                    <span>Costo de Envío:</span>
+                    <span style="color: #2e8b57; font-weight: bold;">GRATIS</span>
+                </div>
+                <div class="summary-line">
+                    <span>Impuestos (IVA):</span>
+                    <span>$3.96</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total a Pagar:</span>
+                    <span>$69.95</span>
+                </div>
+                <button class="checkout-button">
+                    <i class="fas fa-credit-card"></i> Proceder al Pago
+                </button>
+            </div> </div> </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p><a href="#">Volver arriba</a></p>
+            <p>Conoce más de Don Memo | Trabaja con Don Memo | Vende en Don Memo</p>
+            <p>&copy; 2025 La Tienda de Don Memo, C.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

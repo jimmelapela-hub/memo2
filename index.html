@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO | La Tienda de Don Memo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content container">
+            
+            <a href="index.html" class="logo">
+                <span class="logo-name">Don Memo</span>
+                <span class="logo-arrow">🛒</span>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar en La Tienda de Don Memo...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="user-nav">
+                <a href="login.html"><i class="fas fa-user"></i> Hola, Inicia Sesión</a>
+                <a href="carrito.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i> 
+                    <span class="cart-count">0</span>
+                    Carrito
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav-secondary">
+            <ul class="container">
+                <li><a href="todo.html" class="active"><i class="fas fa-bars"></i> Todo</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="electronica.html">Electrónica</a></li>
+                <li><a href="hogar.html">Hogar</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="libros.html">Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container main-content">
+        
+        <div class="main-hero-banner" style="background-color: #f0f0f0; border-radius: 10px; padding: 40px; text-align: center; margin-bottom: 30px; background-image: url('https://images.unsplash.com/photo-1542838132-92a0d189196b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80'); background-size: cover; color: white; background-position: center;">
+            <h1 style="color: white; text-shadow: 2px 2px 4px #000;">¡Bienvenido a La Tienda de Don Memo!</h1>
+            <p style="font-size: 1.2em; text-shadow: 1px 1px 3px #000;">Tu destino para comprar de todo, desde gadgets hasta libros. ¡Envíos rápidos a todo el país!</p>
+            <a href="ofertas.html" class="cta-button" style="display: inline-block; background-color: #ff5722; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 15px; font-weight: bold;">Ver Ofertas del Día <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <h2 class="category-heading" style="border-bottom-color: #333;">🛒 Explora por Categoría</h2>
+
+        <div class="category-tiles">
+            <a href="electronica.html" class="tile" style="background-color: #e6e6ff;">
+                <i class="fas fa-microchip icon-large" style="color: #4a00e0;"></i>
+                <h3>Electrónica</h3>
+                <p>Gadgets, PCs y audio.</p>
+            </a>
+            <a href="hogar.html" class="tile" style="background-color: #f7fff5;">
+                <i class="fas fa-couch icon-large" style="color: #2e8b57;"></i>
+                <h3>Hogar</h3>
+                <p>Decoración, cocina y limpieza.</p>
+            </a>
+            <a href="ropa.html" class="tile" style="background-color: #ffe0f0;">
+                <i class="fas fa-tshirt icon-large" style="color: #c71585;"></i>
+                <h3>Ropa</h3>
+                <p>Moda, calzado y accesorios.</p>
+            </a>
+            <a href="libros.html" class="tile" style="background-color: #fff8e1;">
+                <i class="fas fa-book-open icon-large" style="color: #6a040f;"></i>
+                <h3>Libros</h3>
+                <p>Ficción, ciencia y guías.</p>
+            </a>
+            <a href="ofertas.html" class="tile" style="background-color: #fcebe9;">
+                <i class="fas fa-tag icon-large" style="color: #c0392b;"></i>
+                <h3>¡Ofertas!</h3>
+                <p>Precios especiales del día.</p>
+            </a>
+        </div>
+
+        <h2 class="category-heading" style="border-bottom-color: #ff5722; margin-top: 30px;">🌟 Nuestros Best Sellers</h2>
+        
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e752cc3677?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Auriculares Inalámbricos Pro">
+                <h2>Auriculares Inalámbricos Pro (Cancelación Ruido)</h2>
+                <p class="tag" style="background-color: #4a00e0; color: white;">Electrónica</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star-half-alt orange-star"></i> (4,598)
+                </div>
+                <p class="price">$50.00 <span class="shipping">Envío GRATIS</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1579894451737-25e9663d919a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Taza de Café de Don Memo">
+                <h2>Taza de Café de Don Memo (Edición Limitada)</h2>
+                <p class="tag" style="background-color: #2e8b57; color: white;">Hogar</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i> (12,123)
+                </div>
+                <p class="price">$15.99 <span class="shipping">Envío Rápido</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1582552938171-87201c13d74a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Jeans Clásicos Slim Fit">
+                <h2>Jeans Clásicos Slim Fit para Caballero</h2>
+                <p class="tag" style="background-color: #c71585; color: white;">Ropa</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star-half-alt orange-star"></i> (2,345)
+                </div>
+                <p class="price">$49.50 <span class="shipping">Envío GRATIS</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Guía de Finanzas Personales">
+                <h2>Guía Rápida de Finanzas Personales (Best Seller)</h2>
+                <p class="tag" style="background-color: #6a040f; color: white;">Libros</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i> (1,500)
+                </div>
+                <p class="price">$12.99 <span class="shipping">Envío Digital</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+        </div>
+
+        <div class="service-strip">
+            <div class="service-item">
+                <i class="fas fa-truck-fast"></i>
+                <h4>Envío Rápido</h4>
+                <p>Envíos en 24-48 horas.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Pago Seguro</h4>
+                <p>Transacciones 100% protegidas.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-handshake"></i>
+                <h4>Garantía Don Memo</h4>
+                <p>30 días para devoluciones.</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p><a href="#">Volver arriba</a></p>
+            <p>Conoce más de Don Memo | Trabaja con Don Memo | Vende en Don Memo</p>
+            <p>&copy; 2025 La Tienda de Don Memo, C.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

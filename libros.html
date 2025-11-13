@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Literatura | Don Memo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content container">
+            
+            <a href="index.html" class="logo">
+                <span class="logo-name">Don Memo</span>
+                <span class="logo-arrow">🛒</span>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar en La Tienda de Don Memo...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="user-nav">
+                <a href="login.html"><i class="fas fa-user"></i> Hola, Inicia Sesión</a>
+                <a href="carrito.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i> 
+                    <span class="cart-count">0</span>
+                    Carrito
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav-secondary">
+            <ul class="container">
+                <li><a href="todo.html"><i class="fas fa-bars"></i> Todo</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="electronica.html">Electrónica</a></li>
+                <li><a href="hogar.html">Hogar</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="libros.html" class="active">Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container main-content">
+        
+        <div class="promo-banner" style="background-color: #fff8e1; border-left: 5px solid #6a040f;">
+            <h1>📖 El Mundo de los Libros a un Clic</h1>
+            <p>Novelas, ciencia, autoayuda y más. ¡Encuentra tu próxima gran lectura!</p>
+        </div>
+
+        <h2 class="category-heading" style="border-bottom-color: #6a040f;">✨ Ficción y Novedades</h2>
+        
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1577721865902-b0b3d683a303?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="El Despertar de la Sombra">
+                <h2>El Despertar de la Sombra (Tapa Dura)</h2>
+                <p class="tag" style="background-color: #6a040f; color: white;">Fantasía Épica</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star-half-alt orange-star"></i> (5,120)
+                </div>
+                <p class="price">$25.50 <span class="shipping">Envío GRATIS</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1588661642145-8f6826622839?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Revista de Ciencia Ficción">
+                <h2>Revista de Ciencia Ficción (Edición Aniversario)</h2>
+                <p class="tag" style="background-color: #4a00e0; color: white;">Ciencia Ficción</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i> (2,000)
+                </div>
+                <p class="price">$7.50 <span class="shipping">Envío Rápido</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1554972302-86f78f68749e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Novela Histórica">
+                <h2>El Secreto del Imperio Perdido (Novela Histórica)</h2>
+                <p class="tag" style="background-color: #ff5722; color: white;">Best Seller</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="far fa-star orange-star"></i> (890)
+                </div>
+                <p class="price">$19.99 <span class="shipping">Envío Rápido</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1550399105-c9f5926798e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Clásicos de la Literatura">
+                <h2>Edición Coleccionista: Clásicos Europeos</h2>
+                <p class="tag" style="background-color: #2e8b57; color: white;">Edición Lujo</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star-half-alt orange-star"></i> (340)
+                </div>
+                <p class="price">$39.99 <span class="shipping">Envío GRATIS</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+        </div>
+
+        <h2 class="category-heading" style="border-bottom-color: #ff5722;">🧠 Autoayuda y Conocimiento</h2>
+        
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Guía de Finanzas Personales">
+                <h2>Guía Rápida de Finanzas Personales</h2>
+                <p class="tag" style="background-color: #ff5722; color: white;">Best Seller 2024</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i> (1,500)
+                </div>
+                <p class="price">$12.99 <span class="shipping">Envío Digital</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d9472305b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Libro de Cocina Vegana">
+                <h2>Libro de Cocina Vegana para Principiantes</h2>
+                <p class="tag" style="background-color: #2e8b57; color: white;">Recetas Saludables</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star-half-alt orange-star"></i><i class="far fa-star orange-star"></i> (340)
+                </div>
+                <p class="price">$19.99 <span class="shipping">Envío Digital</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1579895089066-5089f074d222?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Manual de Programación">
+                <h2>Manual Completo de Programación en Python</h2>
+                <p class="tag" style="background-color: #4a00e0; color: white;">Educación</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star-half-alt orange-star"></i> (2,100)
+                </div>
+                <p class="price">$45.00 <span class="shipping">Envío GRATIS</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1544927282-3d8434a93540?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Libro de Historia Mundial">
+                <h2>Breve Historia Mundial: Desde el Big Bang al Presente</h2>
+                <p class="tag" style="background-color: #c71585; color: white;">No Ficción</p>
+                <div class="rating">
+                    <i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="fas fa-star orange-star"></i><i class="far fa-star orange-star"></i> (670)
+                </div>
+                <p class="price">$22.99 <span class="shipping">Envío Rápido</span></p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+        
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p><a href="#">Volver arriba</a></p>
+            <p>Conoce más de Don Memo | Trabaja con Don Memo | Vende en Don Memo</p>
+            <p>&copy; 2025 La Tienda de Don Memo, C.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
